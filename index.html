@@ -6,29 +6,7 @@
       src="https://kit.fontawesome.com/4a6b57e46e.js"
       crossorigin="anonymous"
     ></script>
-    <script>
-      let loginPage = document.getElementById("loginPage");
-      let content = document.getElementById("content");
-      let table = document.getElementById("table");
-
-      function openLogin() {
-        loginPage.classList.remove("d-none");
-        content.classList.add("d-none");
-        table.classList.add("d-none");
-      }
-
-      function openHome() {
-        content.classList.remove("d-none");
-        loginPage.classList.add("d-none");
-        table.classList.add("d-none");
-      }
-
-      function openTable() {
-        content.classList.add("d-none");
-        loginPage.classList.add("d-none");
-        table.classList.remove("d-none");
-      }
-    </script>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
@@ -329,6 +307,6 @@
         </table>
       </div>
     </div>
-     <script src="example.js"></script>
+     <script defer src="example.js"></script>
   </body>
 </html>
