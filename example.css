@@ -188,7 +188,6 @@ td {
 table,
 th,
 td {
-  flex-grow: 1;
   border: 5px solid green;
   border-collapse: collapse;
 }
