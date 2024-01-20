@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: Open Sans;
+}
+
+body {
+  margin: 0px;
+}
+
+.selected-menu:hover {
+  background-color: #296eff;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+.bg-container {
+  height: 100vh;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.Dashboard {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  background-color: #002159;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.Dashboard h1 {
+  text-align: center;
+}
+
+.menu {
+  height: 80vh;
+  overflow-y: scroll;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: left;
+}
+
+.menu::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-logo {
+  margin: 5px;
+}
+
+.profile-link {
+  margin-top: auto;
+  align-self: center;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.profile-image {
+  height: 6vh;
+  border-radius: 50px;
+}
+
+.content {
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-y: auto;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+.content h1 {
+  color: #002159;
+  font-size: 50px;
+  margin-left: 20px;
+}
+
+.container {
+  margin: 15px;
+  margin-left: 20px;
+  width: 80%;
+}
+
+.container p {
+  color: #002159;
+  font-size: 38px;
+  margin: 0px;
+  font-weight: 700;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.image-container img {
+  width: 200px;
+  margin: 10px;
+}
+
+@media (max-width: 700px) {
+  .Dashboard {
+    width: 30%;
+  }
+}
+
+.container1 {
+  padding: 50px;
+  background-color: lightblue;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: orange;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+.d-none {
+  display: none;
+}
+
+.form {
+  overflow-y: auto;
+}
+
+.table-heading {
+  font-size: 25px;
+  margin: 10px;
+}
+
+th,
+td {
+  width: 300px;
+  text-align: center;
+  height: 100px;
+  flex-grow: 1;
+}
+
+table,
+th,
+td {
+  flex-grow: 1;
+  border: 5px solid green;
+  border-collapse: collapse;
+}
+
+.table {
+  overflow-y: auto;
+  align-self: center;
+}
+
+.table::-webkit-scrollbar {
+  display: none;
+  height: 100vh;
+}
+
+.form::-webkit-scrollbar {
+  display: none;
+  height: 100vh;
+}

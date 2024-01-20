@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="example.css" />
+    <script
+      src="https://kit.fontawesome.com/4a6b57e46e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let loginPage = document.getElementById("loginPage");
+      let content = document.getElementById("content");
+      let table = document.getElementById("table");
+
+      function openLogin() {
+        loginPage.classList.remove("d-none");
+        content.classList.add("d-none");
+        table.classList.add("d-none");
+      }
+
+      function openHome() {
+        content.classList.remove("d-none");
+        loginPage.classList.add("d-none");
+        table.classList.add("d-none");
+      }
+
+      function openTable() {
+        content.classList.add("d-none");
+        loginPage.classList.add("d-none");
+        table.classList.remove("d-none");
+      }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div class="bg-container">
+      <div class="Dashboard">
+        <h1>Dashboard</h1>
+        <div class="menu">
+          <p class="selected-menu" onclick="openHome()">
+            <i class="fas fa-home menu-logo"></i>Home
+          </p>
+          <p class="selected-menu" onclick="openLogin()">
+            <i class="fa-regular fa-user menu-logo"></i>Form
+          </p>
+
+          <p class="selected-menu" onclick="openTable()">
+            <i class="far fa-star menu-logo"></i>Table
+          </p>
+        </div>
+      </div>
+      <div class="content" id="content">
+        <h1>Shop For</h1>
+        <div class="container">
+          <p>Cars</p>
+          <div class="image-container">
+            <img
+              class=""
+              src="https://assets.ccbp.in/frontend/intermediate-rwd/car-3-img.png"
+              alt=""
+            />
+            <img
+              class=""
+              src="https://assets.ccbp.in/frontend/intermediate-rwd/car-2-img.png"
+              alt=""
+            />
+            <img
+              class=""
+              src="https://assets.ccbp.in/frontend/intermediate-rwd/car-3-img.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="container">
+          <p>Bikes</p>
+          <div class="image-container">
+            <img
+              class=""
+              src="https://assets.ccbp.in/frontend/intermediate-rwd/bike-1-img.png"
+              alt=""
+            />
+            <img
+              class=""
+              src="https://assets.ccbp.in/frontend/intermediate-rwd/bike-2-img.png"
+              alt=""
+            />
+            <img
+              class=""
+              src="https://assets.ccbp.in/frontend/intermediate-rwd/bike-3-img.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="container">
+          <p>Houses</p>
+          <div class="image-container">
+            <img
+              class=""
+              src="https://assets.ccbp.in/frontend/intermediate-rwd/house-1-img.png"
+              alt=""
+            />
+            <img
+              class=""
+              src="https://assets.ccbp.in/frontend/intermediate-rwd/house-2-img.png"
+              alt=""
+            />
+            <img
+              class=""
+              src="https://assets.ccbp.in/frontend/intermediate-rwd/house-3-img.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <form class="d-none form" id="loginPage">
+        <div class="container1">
+          <center>
+            <h1>Student Registeration Form</h1>
+          </center>
+          <hr />
+          <label> Firstname </label>
+          <input
+            type="text"
+            name="firstname"
+            placeholder="Firstname"
+            size="15"
+            required
+          />
+          <label> Middlename: </label>
+          <input
+            type="text"
+            name="middlename"
+            placeholder="Middlename"
+            size="15"
+            required
+          />
+          <label> Lastname: </label>
+          <input
+            type="text"
+            name="lastname"
+            placeholder="Lastname"
+            size="15"
+            required
+          />
+          <div>
+            <label> Course : </label>
+
+            <select>
+              <option value="Course">Course</option>
+              <option value="BCA">BCA</option>
+              <option value="BBA">BBA</option>
+              <option value="B.Tech">B.Tech</option>
+              <option value="MBA">MBA</option>
+              <option value="MCA">MCA</option>
+              <option value="M.Tech">M.Tech</option>
+            </select>
+          </div>
+          <div>
+            <label> Gender : </label><br />
+            <input type="radio" value="Male" name="gender" checked /> Male
+            <input type="radio" value="Female" name="gender" /> Female
+            <input type="radio" value="Other" name="gender" /> Other
+          </div>
+          <label> Phone : </label>
+          <input
+            type="text"
+            name="country code"
+            placeholder="Country Code"
+            value="+91"
+            size="2"
+          />
+          <input
+            type="text"
+            name="phone"
+            placeholder="phone no."
+            size="10"
+            required
+          />
+          Current Address :
+          <textarea
+            cols="80"
+            rows="5"
+            placeholder="Current Address"
+            value="address"
+            required
+          ></textarea>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required />
+
+          <label for="psw"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+
+          <label for="psw-repeat"><b>Re-type Password</b></label>
+          <input
+            type="password"
+            placeholder="Retype Password"
+            name="psw-repeat"
+            required
+          />
+          <button type="submit" class="registerbtn">Register</button>
+        </div>
+      </form>
+      <div id="table" class="table d-none">
+        <table>
+          <tr>
+            <th class="table-heading">Tag</th>
+            <th class="table-heading">Description</th>
+            <th class="table-heading">Output</th>
+          </tr>
+          <tr>
+            <td>< !---></td>
+            <td>This tag is used as a single line comment</td>
+            <td>this is comment</td>
+          </tr>
+          <tr>
+            <td>< a></td>
+            <td>Defines a hyperlink</td>
+            <td><a href="">click me </a></td>
+          </tr>
+          <tr>
+            <td>< audio></td>
+            <td>This is used to embed sound content in document</td>
+            <td>
+              <audio controls>
+                <source
+                  src="https://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3"
+                  type="audio/mpeg"
+                />
+              </audio>
+            </td>
+          </tr>
+          <tr>
+            <td>< b></td>
+            <td>The tag is used bold text</td>
+            <td><b>Bold text</b></td>
+          </tr>
+          <tr>
+            <td>< body></td>
+            <td>Defines the content of the HTMl document</td>
+            <td>-x-</td>
+          </tr>
+          <tr>
+            <td>< br></td>
+            <td>Defines a single line break</td>
+            <td>
+              hi this is how <br />
+              line break works
+            </td>
+          </tr>
+          <tr>
+            <td>< hr></td>
+            <td>this tag is used to draw horizantal rule</td>
+            <td>
+              text1
+              <hr style="margin: 0px; color: red" />
+              text2
+            </td>
+          </tr>
+          <tr>
+            <td>< code></td>
+            <td>Defines a piece of code</td>
+            <td><code>int i; intx;</code></td>
+          </tr>
+          <tr>
+            <td>< img></td>
+            <td>used to display image on the web page</td>
+            <td>
+              <img
+                class=""
+                src="https://tse2.mm.bing.net/th?id=OIP.xung4mlBfvUR3RKzjnRY2AHaEK&pid=Api&P=0&h=180"
+                alt=""
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>< video></td>
+            <td>defines the video to embedd</td>
+            <td>
+              <video controls>
+                <source src="video.mp4" type="video/mp4" />
+              </video>
+            </td>
+          </tr>
+          <tr>
+            <td>< input></td>
+            <td>used to take input from user</td>
+            <td>
+              <input
+                type="text"
+                name=""
+                id=""
+                value=""
+                placeholder="type here"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>< ul></td>
+            <td>un-ordered list</td>
+            <td>
+              <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>< ol></td>
+            <td>ordered list</td>
+            <td>
+              <ol>
+                <li>hello</li>
+                <li>world</li>
+                <li>html</li>
+              </ol>
+            </td>
+          </tr>
+          <tr>
+            <td>< textarea></td>
+            <td>Defines multiline input control</td>
+            <td><textarea placeholder="enter the text here"></textarea></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
