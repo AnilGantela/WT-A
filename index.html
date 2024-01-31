@@ -28,7 +28,7 @@
         </div>
       </div>
       <div class="content" id="content">
-        <h1>Shop For</h1>
+        <h1 class="main-heading">Shop For</h1>
         <div class="container">
           <p>Cars</p>
           <div class="image-container">
@@ -90,222 +90,197 @@
           </div>
         </div>
       </div>
-      <form class="d-none form" id="loginPage">
-        <div class="container1">
-          <center>
-            <h1>Student Registeration Form</h1>
-          </center>
-          <hr />
-          <label> Firstname </label>
-          <input
-            type="text"
-            name="firstname"
-            placeholder="Firstname"
-            size="15"
-            required
-          />
-          <label> Middlename: </label>
-          <input
-            type="text"
-            name="middlename"
-            placeholder="Middlename"
-            size="15"
-            required
-          />
-          <label> Lastname: </label>
-          <input
-            type="text"
-            name="lastname"
-            placeholder="Lastname"
-            size="15"
-            required
-          />
-          <div>
-            <label> Course : </label>
+      <form class="d-none sign-in-form" id="loginPage" action="#" method="post" >
+       <div class="container1">
+      <h2 class="form-title">Sign In</h2>
 
-            <select>
-              <option value="Course">Course</option>
-              <option value="BCA">BCA</option>
-              <option value="BBA">BBA</option>
-              <option value="B.Tech">B.Tech</option>
-              <option value="MBA">MBA</option>
-              <option value="MCA">MCA</option>
-              <option value="M.Tech">M.Tech</option>
-            </select>
-          </div>
-          <div>
-            <label> Gender : </label><br />
-            <input type="radio" value="Male" name="gender" checked /> Male
-            <input type="radio" value="Female" name="gender" /> Female
-            <input type="radio" value="Other" name="gender" /> Other
-          </div>
-          <label> Phone : </label>
-          <input
-            type="text"
-            name="country code"
-            placeholder="Country Code"
-            value="+91"
-            size="2"
-          />
-          <input
-            type="text"
-            name="phone"
-            placeholder="phone no."
-            size="10"
-            required
-          />
-          Current Address :
-          <textarea
-            cols="80"
-            rows="5"
-            placeholder="Current Address"
-            value="address"
-            required
-          ></textarea>
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required />
+      <label for="name" class="form-label">Name</label>
+      <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
 
-          <label for="psw"><b>Password</b></label>
-          <input
-            type="password"
-            placeholder="Enter Password"
-            name="psw"
-            required
-          />
+      <label for="email" class="form-label">Email</label>
+      <input type="email" id="email" name="email" class="form-input" placeholder="Your email" required>
 
-          <label for="psw-repeat"><b>Re-type Password</b></label>
-          <input
-            type="password"
-            placeholder="Retype Password"
-            name="psw-repeat"
-            required
-          />
-          <button type="submit" class="registerbtn">Register</button>
-        </div>
+      <label for="phone" class="form-label">Phone Number</label>
+      <input type="tel" id="phone" name="phone" class="form-input" placeholder="Your phone number" required>
+
+      <label for="dob" class="form-label">Date of Birth</label>
+      <input type="date" id="dob" name="dob" class="form-input" required>
+
+      <label for="password" class="form-label">Create Password</label>
+      <input type="password" id="password" name="password" class="form-input" placeholder="Create a password" required>
+
+      <button type="submit" class="form-button">Sign In</button>
+  </div>
+
       </form>
       <div id="table" class="table d-none">
-        <table>
-          <tr>
-            <th class="table-heading">Tag</th>
-            <th class="table-heading">Description</th>
-            <th class="table-heading">Output</th>
-          </tr>
-          <tr>
-            <td>< !---></td>
-            <td>This tag is used as a single line comment</td>
-            <td>this is comment</td>
-          </tr>
-          <tr>
-            <td>< a></td>
-            <td>Defines a hyperlink</td>
-            <td><a href="">click me </a></td>
-          </tr>
-          <tr>
-            <td>< audio></td>
-            <td>This is used to embed sound content in document</td>
-            <td>
-              <audio controls>
-                <source
-                  src="https://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3"
-                  type="audio/mpeg"
-                />
-              </audio>
-            </td>
-          </tr>
-          <tr>
-            <td>< b></td>
-            <td>The tag is used bold text</td>
-            <td><b>Bold text</b></td>
-          </tr>
-          <tr>
-            <td>< body></td>
-            <td>Defines the content of the HTMl document</td>
-            <td>-x-</td>
-          </tr>
-          <tr>
-            <td>< br></td>
-            <td>Defines a single line break</td>
-            <td>
-              hi this is how <br />
-              line break works
-            </td>
-          </tr>
-          <tr>
-            <td>< hr></td>
-            <td>this tag is used to draw horizantal rule</td>
-            <td>
-              text1
-              <hr style="margin: 0px; color: red" />
-              text2
-            </td>
-          </tr>
-          <tr>
-            <td>< code></td>
-            <td>Defines a piece of code</td>
-            <td><code>int i; intx;</code></td>
-          </tr>
-          <tr>
-            <td>< img></td>
-            <td>used to display image on the web page</td>
-            <td>
-              <img
-                class=""
-                src="https://tse2.mm.bing.net/th?id=OIP.xung4mlBfvUR3RKzjnRY2AHaEK&pid=Api&P=0&h=180"
-                alt=""
-                height="100px" width="300px"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td>< video></td>
-            <td>defines the video to embedd</td>
-            <td>
-              <video controls >
-                <source src="video.mp4" type="video/mp4" height="100px" width="300px" />
-              </video>
-            </td>
-          </tr>
-          <tr>
-            <td>< input></td>
-            <td>used to take input from user</td>
-            <td>
-              <input
-                type="text"
-                name=""
-                id=""
-                value=""
-                placeholder="type here"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td>< ul></td>
-            <td>un-ordered list</td>
-            <td>
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td>< ol></td>
-            <td>ordered list</td>
-            <td>
-              <ol>
-                <li>hello</li>
-                <li>world</li>
-                <li>html</li>
-              </ol>
-            </td>
-          </tr>
-          <tr>
-            <td>< textarea></td>
-            <td>Defines multiline input control</td>
-            <td><textarea placeholder="enter the text here"></textarea></td>
-          </tr>
-        </table>
+          <h1 class="main-heading" >Cars for Sale</h1>
+        <div class="table-container">
+    <table class="cars-table">
+      <thead>
+        <tr>
+          <th>Car</th>
+          <th>Brand</th>
+          <th>Model</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Car 1</td>
+          <td>Toyota</td>
+          <td>Camry</td>
+          <td>2022</td>
+        </tr>
+        <tr>
+          <td>Car 2</td>
+          <td>Honda</td>
+          <td>Accord</td>
+          <td>2021</td>
+        </tr>
+        <tr>
+          <td>Car 3</td>
+          <td>Ford</td>
+          <td>Mustang</td>
+          <td>2023</td>
+        </tr>
+        <tr>
+          <td>Car 4</td>
+          <td>Chevrolet</td>
+          <td>Malibu</td>
+          <td>2022</td>
+        </tr>
+        <!-- Add 21 more rows with different car specifications -->
+
+        <tr>
+          <td>Car 5</td>
+          <td>Nissan</td>
+          <td>Altima</td>
+          <td>2023</td>
+        </tr>
+        <tr>
+          <td>Car 6</td>
+          <td>BMW</td>
+          <td>3 Series</td>
+          <td>2022</td>
+        </tr>
+        <tr>
+          <td>Car 7</td>
+          <td>Mercedes-Benz</td>
+          <td>E-Class</td>
+          <td>2021</td>
+        </tr>
+        <tr>
+          <td>Car 8</td>
+          <td>Audi</td>
+          <td>A4</td>
+          <td>2023</td>
+        </tr>
+        <tr>
+          <td>Car 9</td>
+          <td>Hyundai</td>
+          <td>Sonata</td>
+          <td>2022</td>
+        </tr>
+        <tr>
+          <td>Car 10</td>
+          <td>Kia</td>
+          <td>Optima</td>
+          <td>2021</td>
+        </tr>
+        <tr>
+          <td>Car 11</td>
+          <td>Subaru</td>
+          <td>Legacy</td>
+          <td>2023</td>
+        </tr>
+        <tr>
+          <td>Car 12</td>
+          <td>Mazda</td>
+          <td>6</td>
+          <td>2022</td>
+        </tr>
+        <tr>
+          <td>Car 13</td>
+          <td>Volkswagen</td>
+          <td>Passat</td>
+          <td>2021</td>
+        </tr>
+        <tr>
+          <td>Car 14</td>
+          <td>Tesla</td>
+          <td>Model 3</td>
+          <td>2023</td>
+        </tr>
+        <tr>
+          <td>Car 15</td>
+          <td>Volvo</td>
+          <td>S60</td>
+          <td>2022</td>
+        </tr>
+        <tr>
+          <td>Car 16</td>
+          <td>Lexus</td>
+          <td>ES</td>
+          <td>2021</td>
+        </tr>
+        <tr>
+          <td>Car 17</td>
+          <td>Infiniti</td>
+          <td>Q50</td>
+          <td>2023</td>
+        </tr>
+        <tr>
+          <td>Car 18</td>
+          <td>Jaguar</td>
+          <td>XE</td>
+          <td>2022</td>
+        </tr>
+        <tr>
+          <td>Car 19</td>
+          <td>Land Rover</td>
+          <td>Discovery</td>
+          <td>2021</td>
+        </tr>
+        <tr>
+          <td>Car 20</td>
+          <td>Porsche</td>
+          <td>Panamera</td>
+          <td>2023</td>
+        </tr>
+        <tr>
+          <td>Car 21</td>
+          <td>Jeep</td>
+          <td>Grand Cherokee</td>
+          <td>2022</td>
+        </tr>
+        <tr>
+          <td>Car 22</td>
+          <td>Ford</td>
+          <td>Explorer</td>
+          <td>2021</td>
+        </tr>
+        <tr>
+          <td>Car 23</td>
+          <td>Chevrolet</td>
+          <td>Traverse</td>
+          <td>2023</td>
+        </tr>
+        <tr>
+          <td>Car 24</td>
+          <td>Toyota</td>
+          <td>Highlander</td>
+          <td>2022</td>
+        </tr>
+        <tr>
+          <td>Car 25</td>
+          <td>Honda</td>
+          <td>Pilot</td>
+          <td>2021</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
       </div>
     </div>
      <script defer src="example.js"></script>
