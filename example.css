@@ -84,7 +84,7 @@ body {
   display: none;
 }
 
-.content h1 {
+.main-heading {
   color: #002159;
   font-size: 50px;
   margin-left: 20px;
@@ -117,7 +117,7 @@ body {
   margin: 10px;
 }
 
-@media (max-width: 700px) {
+@media only screen  and (max-width: 780px) {
   .Dashboard {
     width: 100%;
     height:150px;
@@ -141,57 +141,103 @@ body {
   padding: 10px;
   text-align: left;
 }
+.container1{
+    width: 100%;
+    max-width: 400px;
+}
+  .sign-in-form{
+      width: 100%;
+
+      padding: 5px;
+  }
 }
 
 .container1 {
-  padding: 50px;
-  background-color:  #296eff;
-}
-
-input[type="text"],
-input[type="password"],
-textarea {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
   width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
+  max-width: 700px;
+  margin: auto;
+}
+
+.sign-in-form {
+  margin: 0 auto;
+  width:100%;
+}
+
+.form-title {
+  text-align: center;
+  color: #333;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 3px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
   border: none;
-  background: #f1f1f1;
-}
-
-input[type="text"]:focus,
-input[type="password"]:focus {
-  background-color: orange;
-  outline: none;
-}
-
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-
-.registerbtn {
-  background-color: #4caf50;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
+  border-radius: 4px;
   cursor: pointer;
   width: 100%;
-  opacity: 0.9;
 }
 
-.registerbtn:hover {
-  opacity: 1;
+.form-button:hover {
+  background-color: #2980b9;
 }
+
 
 .d-none {
   display: none;
 }
 
-.form {
-  
-  overflow-y: auto;
+.cars-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0px;
+}
+
+.cars-table th, .cars-table td {
+  border: 1px solid #296eff;
+  text-align: left;
+  padding: 8px;
+  font-size: 25px;
+}
+
+.cars-table th {
+  background-color: #f2f2f2;
+}
+
+.cars-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+  .cars-table td, .cars-table th {
+    padding: 6px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .cars-table th, .cars-table td {
+    font-size: 12px;
+    padding: 6px;
+  }
 }
 
 .table-heading {
@@ -209,7 +255,6 @@ td {
 table,
 th,
 td {
-  border: 5px solid green;
   border-collapse: collapse;
 }
 
